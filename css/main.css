@@ -1,0 +1,182 @@
+/* ------ custum fonts ------- */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueLT-55Rm.woff2') format('woff2'),
+      url('../fonts/HelveticaNeueLT-55Rm.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeueBold.woff2') format('woff2'),
+      url('../fonts/HelveticaNeueBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica-Bold.woff2') format('woff2'),
+      url('../fonts/Helvetica-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica-Oblique.woff2') format('woff2'),
+      url('../fonts/Helvetica-Oblique.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica-Light.woff2') format('woff2'),
+      url('../fonts/Helvetica-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica.woff2') format('woff2'),
+      url('../fonts/Helvetica.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ------- Site container --------- */
+.container{
+  max-width: 980px;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+
+/*------- top bar styling ------*/
+.top-bar{
+  min-height: 56px;
+  width: 100%;
+  border-top: 2px solid #797979;
+  border-bottom: 1px solid #E2E2E3;
+}
+.topbar-sup{
+  background-color: #3C4E5A;
+}
+.topbar-sup .container{
+  display: flex;
+  justify-content: space-between;
+}
+.topbar-sup .left{
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+.topbar-sup .left a{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+  margin-right: 9px;
+}
+.topbar-sup .help{
+  background-color: #FF7500;
+  font-size: 13px;
+  text-transform: capitalize;
+  padding: 5px;
+}
+.topbar-sup .sitemap{
+  font-size: 12px;
+}
+.topbar-sup .other-link{
+  text-transform: uppercase;
+  display: block;
+}
+.topbar-sup .other-link .letter1{
+  font-size: 12px;
+  letter-spacing: -3.5px;
+}
+.topbar-sup .other-link .letter2{
+  font-size: 14px;
+  letter-spacing: -3.5px;
+}
+.topbar-sup .other-link .letter3{
+  font-size: 15px;
+}
+.topbar-sup .divider{
+  height: 100%;
+  width: 1px;
+  background-color: #ffffff;
+}
+.topbar-sup .datetime{
+  color: #ffffff;
+  position: relative;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+}
+.topbar-sup .profile{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+.topbar-sup .profile .divider{
+  background-color: #8b8b8b;
+}
+.topbar-sup a{
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+.topbar-sup .process-btn img{
+  margin-right: 10px;
+}
+.topbar-sup .login-btn img{
+  margin-left: 10px;
+}
+.topbar-sup .login-btn::after{
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: #00DB1E;
+  border-radius: 50px;
+  display: block;
+  position: relative;
+  z-index: 15;
+  left: -4px;
+  top: -6px;
+}
+.process-box{
+  position: relative;
+}
+.topbar-sup .arrow-btn{
+  position: absolute;
+  background-color: #FD7605;
+  padding: 1px 20px;
+  display: block;
+  line-height: 0;
+  bottom: -4px;
+  left: 50%;
+  transform: translate(-50%);
+  clip-path: polygon(100% 0, 92% 99%, 8% 100%, 0 0);
+}
+.login-box{
+  position: relative;
+}
