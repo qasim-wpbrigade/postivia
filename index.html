@@ -1,32 +1,28 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="es">
 
 <head>
   <meta charset="utf-8">
   <title>Postivia</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+
   <!-- topbar -->
   <div class="topbar">
     <div class="container">
-      <div class="left">
+      <div class="left-btns">
         <a href="#" class="help">ayuda</a>
         <a href="#" class="sitemap">Mapa del sitio</a>
         <a href="#" class="other-link">
@@ -39,40 +35,45 @@
       <div class="profile">
         <div class="process-btn">
           <a href="#">
-            <img class="user-img" src="./img/user_icon.svg" alt="">
+            <img class="user-img" src="./img/user_icon.svg" alt="user-icon">
             <span>Proceso ante accidente laboral</span>
           </a>
-          <span class="arrow-btn"><img src="img/arrow.png" alt=""></span>
+          <span class="arrow-btn"><img src="img/arrow.png" alt="arrow"></span>
         </div>
         <div class="login-btn">
           <a href="#">
             <span>Iniciar sesión</span>
-            <img class="user-img" src="./img/login-user.png" alt="">
+            <img class="user-img" src="./img/login-user.png" alt="user-icon">
           </a>
-          <span class="arrow-btn"><img src="img/arrow.png" alt=""></span>
+          <span class="arrow-btn"><img src="img/arrow.png" alt="arrow"></span>
         </div>
       </div>
     </div>
   </div>
+
   <!-- header section -->
   <header class="header">
     <div class="container">
       <a href="#" class="brand-logo">
         <img src="img/positiva_logo.svg" alt="logo">
       </a>
+      <buttom class="toggle-btn" id="toggle-nav">
+        <img src="./img/menu-icon.png" alt="toggle">
+      </buttom>
       <ul class="left-logos">
-        <li><img src="img/minhacienda.svg" alt=""></li>
-        <li><img src="img/todos_por.svg" alt=""></li>
+        <li><img src="img/minhacienda.svg" alt="minhacienda"></li>
+        <li><img src="img/todos_por.svg" alt="todos_por"></li>
       </ul>
     </div>
   </header>
+
   <!-- navbar section -->
   <nav class="navbar">
     <div class="container">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">inico</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#">la compañía <img src="img/arrow-dropdown.png" alt=""></a>
+        <li><a href="#">inico</a></li>
+        <li class="dropdown">
+          <a href="#">la compañía <img src="img/arrow-dropdown.png" alt="arrow"></a>
           <ul class="dropdown-menu">
             <li><a href="#">Misión y Visión</a></li>
             <li><a href="#">Objetivos y Funciones</a></li>
@@ -92,8 +93,8 @@
             <li><a href="#">Intermediarios</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#">arl <img src="img/arrow-dropdown.png" alt=""></a>
+        <li class="dropdown">
+          <a href="#">arl <img src="img/arrow-dropdown.png" alt="arrow"></a>
           <ul class="dropdown-menu">
             <li><a href="#">Beneficios</a></li>
             <li><a href="#">Manual de Usuario</a></li>
@@ -105,8 +106,8 @@
             <li><a href="#">Notificaciones</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#">seguros de vida <img src="img/arrow-dropdown.png" alt=""></a>
+        <li class="dropdown">
+          <a href="#">seguros de vida <img src="img/arrow-dropdown.png" alt="arrow"></a>
           <ul class="dropdown-menu">
             <li><a href="#">Accidentes Personales</a></li>
             <li><a href="#">Vida Grupo</a></li>
@@ -119,8 +120,8 @@
             <li><a href="#">Beneficios</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#">atencion al ciudadano</a></li>
-        <li class="nav-item form-box">
+        <li><a href="#">atencion al ciudadano</a></li>
+        <li class="form-box">
           <form action="/">
             <input type="text" name="search" id="search" placeholder="Busqueda">
             <button type="submit"><img src="img/search_icon.svg" alt="search"></button>
@@ -129,21 +130,23 @@
       </ul>
     </div>
   </nav>
+
   <!-- hero section -->
   <div class="hero-section">
     <div class="container">
-      <div class="headings">
+      <div class="hero-headings">
         <p>Garantiza <span>el</span> Bienestar</p>
         <h1>de tus</h1>
         <h2>Empleados<br><span>con</span> Positiva</h2>
       </div>
     </div>
   </div>
+
   <!-- features section -->
-  <div class="features-sec">
+  <div class="features">
     <div class="container">
       <div class="item">
-        <img src="./img/builder_icon.svg" alt="">
+        <img src="./img/builder_icon.svg" alt="builder_icon">
         <p>riesgos laborales</p>
         <h3>arl</h3>
         <div class="overlay">
@@ -152,7 +155,7 @@
         </div>
       </div>
       <div class="item">
-        <img src="./img/family_icon.svg" alt="">
+        <img src="./img/family_icon.svg" alt="family_icon">
         <p>seguros dE</p>
         <h3>vida</h3>
         <div class="overlay">
@@ -161,7 +164,7 @@
         </div>
       </div>
       <div class="item">
-        <img src="./img/man_icon.svg" alt="">
+        <img src="./img/man_icon.svg" alt="man_icon">
         <p>seguros</p>
         <h3>personales</h3>
         <div class="overlay">
@@ -170,7 +173,7 @@
         </div>
       </div>
       <div class="item">
-        <img src="./img/three_dots_icon.svg" alt="">
+        <img src="./img/three_dots_icon.svg" alt="three_dots">
         <p>otros</p>
         <h3>seguros</h3>
         <div class="overlay">
@@ -180,49 +183,335 @@
       </div>
     </div>
   </div>
+
   <!-- services section -->
-  <div class="services-sec">
+  <div class="services-section">
     <div class="container">
       <div class="services">
         <div class="item">
           <h2 class="title">servicio en línea</h2>
           <div class="thumbnail">
-            <img src="./img/slide_1.jpg" alt="">
+            <img src="./img/slide_1.jpg" alt="thumbnail">
+            <img src="./img/logo_icon.svg" alt="branding" class="branding">
           </div>
-          <p>Solicitudes de Afiliación
+          <p>
+            Solicitudes de Afiliación
             Transacciones ARL
             Certificados en Línea
-            Aporte a riesgos Laborales</p>
+            Aporte a riesgos Laborales
+          </p>
           <a href="#">+ Ver otros servicios</a>
         </div>
         <div class="item">
           <h2 class="title">Formularios</h2>
           <div class="thumbnail">
-            <img src="./img/slide_2.jpg" alt="">
+            <img src="./img/slide_2.jpg" alt="thumbnail">
+            <img src="./img/logo_icon.svg" alt="branding" class="branding">
           </div>
-          <p>Riesgos Laborales<br>
+          <p>
+            Riesgos Laborales<br>
             Vida Individual<br>
             Vida Grupo y<br>
-            Accidentes Personales</p>
+            Accidentes Personales
+          </p>
           <a href="#">+ Ver otros servicios</a>
         </div>
         <div class="item">
           <h2 class="title">Trámites</h2>
           <div class="thumbnail">
-            <img src="./img/slide_3.jpg" alt="">
+            <img src="./img/slide_3.jpg" alt="thumbnail">
+            <img src="./img/logo_icon.svg" alt="branding" class="branding">
           </div>
-          <p>Riesgos Laborales<br>
+          <p>
+            Riesgos Laborales<br>
             Vida Individual<br>
             Vida Grupo y<br>
-            Accidentes Personales</p>
+            Accidentes Personales
+          </p>
           <a href="#">+ Ver otros servicios</a>
         </div>
       </div>
-      <div class="aside"></div>
+
+      <div class="services-aside">
+        <div class="buttons">
+          <button class="active" id="servicetab1">Red Asistencial</button>
+          <button id="servicetab2">Punto de Atencion</button>
+        </div>
+        <p>Consulta Rapidamente tu red asistencial</p>
+        <form class="active" id="servicetabcontent1" action="/">
+          <div class="form-group">
+            <label for="departamento">departamento:</label>
+            <select name="departamento" id="departamento">
+              <option value="">departamento</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="ciudad">ciudad:</label>
+            <select name="ciudad" id="ciudad">
+              <option value="">ciudad</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="selecciones-red">selecciones red:</label>
+            <select name="selecciones red" id="selecciones-red">
+              <option value="">selecciones</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="selecciones-un-punto">selecciones un punto:</label>
+            <select name="selecciones-un-punto" id="selecciones-un-punto">
+              <option value="">punto</option>
+            </select>
+          </div>
+          <button class="submit-btn" type="submit">buscar</button>
+        </form>
+        <form id="servicetabcontent2" action="/">
+          <div class="form-group">
+            <label for="departamento">departamento:</label>
+            <select name="departamento" id="departamento">
+              <option value="">departamento</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="ciudad">ciudad:</label>
+            <select name="ciudad" id="ciudad">
+              <option value="">ciudad</option>
+            </select>
+          </div>
+          <button class="submit-btn" type="submit">buscar</button>
+        </form>
+      </div>
     </div>
   </div>
+
+  <!-- main body -->
+  <div class="main">
+    <div class="container">
+      <div class="main-body">
+        <div class="news-section">
+          <div class="slider">
+            <img class=" slider-arrow left-arrow" src="img/slider-arrow-left.png" alt="arrow">
+            <img class=" slider-arrow right-arrow" src="img/slider-arrow-right.png" alt="arrow">
+            <div class="news-slider">
+              <div><img src="img/smily_girl.jpg" alt="thumbnail"></div>
+              <div><img src="img/smily_girl.jpg" alt="thumbnail"></div>
+              <div><img src="img/smily_girl.jpg" alt="thumbnail"></div>
+              <div><img src="img/smily_girl.jpg" alt="thumbnail"></div>
+            </div>
+          </div>
+          <div class="news-content">
+            <h2>Noticias</h2>
+            <h4>INFORMACIÓN IMPORTANTE PARA PENSIONADOS ARL</h4>
+            <p>
+              De 3.194 personas que han sido notificadas para la realización de una valoración médica para verificar el
+              estado de invalidez, 1.867 pensionados aún no acuden a esta citación, lo que puede generar la suspensión
+              en el pago de su mesada pensional.
+            </p>
+            <a href="#">ver mas noticias</a>
+          </div>
+        </div>
+        <div class="banner">
+          <a href="#">
+            <img src="img/bannerad1.jpg" alt="banner">
+          </a>
+        </div>
+        <div class="banner-slider-container">
+          <div class="banner-slider">
+            <a href="#"><img src="img/banner_slider.jpg" alt=""></a>
+            <a href="#"><img src="img/banner_slider.jpg" alt=""></a>
+            <a href="#"><img src="img/banner_slider.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="banner">
+          <a href="#">
+            <img src="img/bannerad2.jpg" alt="banner">
+          </a>
+        </div>
+      </div>
+      <div class="main-aside">
+        <div class="banner">
+          <a href="#">
+            <img src="img/chat.jpg" alt="chat">
+          </a>
+        </div>
+        <div class="banner">
+          <a href="#">
+            <img src="img/banner2.jpg" alt="banner">
+          </a>
+        </div>
+        <div class="banner">
+          <a href="#">
+            <img src="img/banner2.jpg" alt="banner">
+          </a>
+        </div>
+        <form action="/" class="newsLetter-form">
+          <div class="form-group">
+            <label for="newsletter">NewsLetter:</label>
+            <input type="email" placeholder="E-mail" name="email" id="newsletter">
+          </div>
+          <button class="submit-btn" type="submit">enviar</button>
+        </form>
+        <a class="twitter-timeline" data-height="305" href="https://twitter.com/PositivaCol?ref_src=twsrc%5Etfw">Tweets by PositivaCol</a>
+        <div class="events">
+          <div class="buttons">
+            <button class="primary-btn">evento</button>
+            <button>Punto de Atencion</button>
+          </div>
+          <form action="/">
+            <div class="form-group">
+              <input type="date" name="date" id="date">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact section -->
+  <div class="contact">
+    <div class="container">
+      <div class="contact-options">
+        <div class="card">
+          <img src="img/contratacion.svg" alt="card-icon">
+          <p>contratación</p>
+        </div>
+        <div class="card">
+          <img src="img/consumidor.svg" alt="card-icon">
+          <p>consumidor</p>
+          <h4>financiero</h4>
+        </div>
+        <div class="card">
+          <img src="img/servicios.svg" alt="card-icon">
+          <p>servicios al</p>
+          <h4>ciudadano</h4>
+        </div>
+        <div class="card">
+          <img src="img/positiva_en.svg" alt="card-icon">
+          <p>positiva en</p>
+          <h4>contácto</h4>
+        </div>
+        <div class="card">
+          <img src="img/mapa_de.svg" alt="card-icon">
+          <p>Mapa de</p>
+          <h4>Navegación</h4>
+        </div>
+        <div class="card">
+          <img src="img/preguntas.svg" alt="card-icon">
+          <p>Preguntas</p>
+          <h4>Frecuentes</h4>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="card">
+          <div class="image">
+            <img src="img/receiver_icon.svg" alt="icon">
+          </div>
+          <div class="content">
+            <h4>Líneas de atención</h4>
+            <p>Comunicate a nivel nacional</p>
+            <a href="tel:018000111170" class="number primary">01-8000-111-170</a>
+            <p>En Bogotá</p>
+            <a href="tel:3307000" class="number">330-7000</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="img/navigator_icon.svg" alt="icon">
+          </div>
+          <div class="content">
+            <h4>Puntos de Atención</h4>
+            <p>Ubica el punto de atención más cercano</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="img/directory_group.svg" alt="icon">
+          </div>
+          <div class="content">
+            <h4>Directorio de Funcionarios</h4>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="img/linea_icon.svg" alt="icon">
+          </div>
+          <div class="content">
+            <h4>Línea Ética</h4>
+            <p><a href="#">Presenta aquí tu caso</a> de fraude o corrupción</p>
+            <a class="number" href="tel:018000112870">01-8000-112-870</a>
+            <h5>Correo electronico</h5>
+            <a href="mailto:servicioalcliente@positiva.gov.co" class="mail">
+              <img src="img/MAIL.png" alt="mail">
+              servicioalcliente@positiva.gov.co
+            </a>
+            <a href="mailto:notijicacionesjudiciales@popositiva.gov.co" class="mail">
+              <img src="img/MAIL.png" alt="mail">
+              notijicacionesjudiciales@popositiva.gov.co 
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sponsers section -->
+  <div class="sponsers">
+    <div class="container">
+      <div class="logo">
+        <img src="img/portal_de_logo.png" alt="sponser-logo">
+      </div>
+      <div class="logo">
+        <img src="img/superintend.jpg" alt="sponser-logo">
+      </div>
+      <div class="logo">
+        <img src="img/urna_de_cristal.png" alt="sponser-logo">
+      </div>
+      <div class="logo">
+        <img src="img/badge_1.jpg" alt="sponser-logo">
+      </div>
+      <div class="logo">
+        <img src="img/badge_2.jpg" alt="sponser-logo">
+      </div>
+      <div class="logo">
+        <img src="img/badge_1.jpg" alt="sponser-logo">
+      </div>
+      <div class="logo">
+        <img src="img/clinents_logo.png" alt="sponser-logo">
+      </div>
+      <div class="logo">
+        <img src="img/clinents_logo.png" alt="sponser-logo">
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <ul class="footer-links">
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política editorial</a></li>
+          <li><a href="#">Política de seguridad</a></li>
+          <li><a href="#">Intranet</a></li>
+          <li><a href="#">Admin</a></li>
+        </ul>
+        <div class="footer-info">
+          <p>Última actualización 12/06/2015 11:45:00</p>
+          <p>Numero de visitantes: 1982448</p>
+          <p>Este portal funciona mejor en IE7+, Chrome 11+, Firefox 10+</p>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <img src="img/footer_positiva_logo.svg" alt="foter-logo">
+      </div>
+    </div>
+  </div>
+
   <!-- Javascrips -->
+  <script async src="https://platform.twitter.com/widgets.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
